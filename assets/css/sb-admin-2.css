@@ -5395,6 +5395,12 @@ input[type="button"].btn-block {
   font-family: inherit;
   color: white !important;
   box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 30px 30px -20px;
+
+  background: linear-gradient(
+    45deg,
+    rgb(16, 137, 211) 0%,
+    rgb(18, 177, 209) 100%
+  );
 }
 .card-resume {
   position: relative;
@@ -5518,15 +5524,15 @@ input[type="button"].btn-block {
 }
 
 .card-text:last-child {
-  padding: 0.8rem;
+  padding: 2rem;
   margin: 0;
   color: #f1faee;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 .card-text1:last-child {
   margin: 0;
   color: #f1faee;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .card-link:hover {
@@ -10765,7 +10771,7 @@ a.text-dark:focus {
 }
 
 .text-muted {
-  color: #858796 !important;
+  color: #bde0fe !important;
 }
 
 .text-black-50 {
@@ -12445,6 +12451,12 @@ body.sidebar-toggled footer.sticky-footer {
   font-family: inherit;
   color: white !important;
   box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 30px 30px -20px;
+
+  background: linear-gradient(
+    45deg,
+    rgb(16, 137, 211) 0%,
+    rgb(18, 177, 209) 100%
+  );
 }
 .img-saluda {
   width: 4rem;
@@ -12497,7 +12509,7 @@ body.sidebar-toggled footer.sticky-footer {
   font-size: 1em;
 }
 .card-education .span-years-education {
-  color: white;
+  color: #bde0fe;
   display: block;
   text-align: center;
   padding-top: 0.2rem;
