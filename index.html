@@ -20,7 +20,11 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <!-- Query -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+    <!-- Sweet Alert-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Custom fonts for this template-->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
@@ -499,7 +503,7 @@
                           <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791"/>
                         </svg>
                       </a>
-                      <a class="social-link" href="./assets/files/CV_IsidroServin_FSD-3.pdf" target="_blank">
+                      <a class="social-link" href="./assets/files/IsidroServin_FSD.pdf" target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-person" viewBox="0 0 16 16">
                           <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
                           <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2M9.5 3A1.5 1.5 0 0 0 11 4.5h2v9.255S12 12 8 12s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h5.5z"/>
@@ -525,7 +529,7 @@
               <div class="col-sm-12 col-md-10 col-lg-6 mt-3">
                 <div class="container2">
                   <div class="heading2">Mail me!</div>
-                  <form action="" class="form2" method="POST">
+                  <form id="sendForm" class="form2">
                     <input
                       required=""
                       class="input2"
@@ -553,7 +557,7 @@
                     <label class="message-label mt-2" for="message">Message:</label>
                     <textarea name="message" id="message" class="input2" cols="30" rows="8" placeholder="Your Message" required="">
                     </textarea>
-                    <input class="login-button2" type="submit" value="Submit" />
+                    <input  class="login-button2" type="submit" value="Submit" />
                   </form>
                 </div>
               </div>

@@ -55,5 +55,48 @@
     }
   });
 
+  $("#sendForm").submit(function (e) {
+    e.preventDefault(); // Evita que se envíe el formulario de forma tradicional
+
+    // Obtiene los datos del formulario
+    const formData = {
+      email: $("#email").val(),
+      fname: $("#fname").val(),
+      subject: $("#subject").val(),
+      message: $("#message").val(),
+      // Agrega aquí los demás campos del formulario
+    };
+
+    // Envía los datos mediante AJAX
+    $.ajax({
+      type: "POST",
+      url: "http://192.168.0.48:3000/sendMessage", // Cambia 'tu_script.php' por la URL de tu script de procesamiento
+      data: JSON.stringify(formData),
+      contentType: "application/json",
+      success: function (response) {
+        // Mostrar modal de éxito
+        Swal.fire({
+          title: "All done!",
+          text: "Thanks for your message!",
+          icon: "success",
+          confirmButtonText: "Cool!",
+        });
+      },
+      error: function () {
+        // Mostrar modal de error
+        Swal.fire({
+          title: "Ooops!",
+          text: "Seems that something gone worng,  please try again later!",
+          icon: "error",
+          confirmButtonText: "Got it!",
+        });
+      },
+    });
+    $("#email").val("");
+    $("#fname").val("");
+    $("#subject").val("");
+    $("#message").val("");
+  });
+
   // Smooth scrolling using jQuery easing
 })(jQuery); // End of use strict
