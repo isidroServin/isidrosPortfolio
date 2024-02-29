@@ -525,7 +525,7 @@
               <div class="col-sm-12 col-md-10 col-lg-6 mt-3">
                 <div class="container2">
                   <div class="heading2">Mail me!</div>
-                  <form action="" class="form2">
+                  <form action="" class="form2" method="POST">
                     <input
                       required=""
                       class="input2"
@@ -550,15 +550,9 @@
                       id="subject"
                       placeholder="Subject"
                     />
-                    <input
-                      required=""
-                      class="input2"
-                      type="email"
-                      name="email"
-                      id="email"
-                      placeholder="Your Message"
-                    />
-
+                    <label class="message-label mt-2" for="message">Message:</label>
+                    <textarea name="message" id="message" class="input2" cols="30" rows="8" placeholder="Your Message" required="">
+                    </textarea>
                     <input class="login-button2" type="submit" value="Submit" />
                   </form>
                 </div>

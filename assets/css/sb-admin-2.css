@@ -224,6 +224,11 @@
   border-inline: 2px solid transparent;
 }
 
+.form2 .message-label {
+  color: rgb(0, 140, 255);
+  font-size: larger;
+}
+
 .form2 .input2::-moz-placeholder {
   color: rgb(170, 170, 170);
 }
